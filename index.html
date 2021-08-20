@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tak-Toe</title>
+    <link rel="icon" href="coollogo_com-9824129 (1).png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+<body>
+    <!------  audios  in the game   -->
+    <audio id="clicksound">
+        <source src="zapsplat_multimedia_button_click_007_53868.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="tie">
+        <source src="TZRM68V-game-over.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="winsound">
+        <source src="mixkit-wind-chimes-2014.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="movement">
+        <source src="mixkit-arcade-game-jump-coin-216.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!--------------------------------------------------------------------->
+
+
+
+    <div id="container">
+        <div id="startingPage">
+            <h6><img src="coollogo_com-9824129 (1).png" alt="" srcset=""></h2>
+                <h6 style="color: white;">Developed by ©<a style="color: white;text-decoration: none;"
+                        href="https://vishakkr.github.io/VishakKR/">Vishak KR</a>-2021</h6>
+                <div id="line"></div>
+                <h4>Select X / O ?</h4>
+                <div id="button">
+                    <button id="playerX" class="choose">Player X</button>
+                    <button onclick="playAudio()" id="playerO" class="choose">Player O</button>
+                </div>
+        </div>
+        <!--------------------------------------------------------------------->
+        <div id="mainPage">
+            <div id="headerBtns">
+                <button id="">X Turn</button>
+                <button id="O_Turn">O Turn</button>
+                <div id="showChange"></div>
+            </div>
+            <!--------------------------------------------------------------------->
+            <div id="gameBoard">
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+
+            </div>
+        </div>
+        <!--------------------------------------------------------------------->
+        <div id="winner">
+            <h2 id="winnerName">Player X Win!!</h2>
+            <div id="button">
+                <button id="quit">Play Again</button>
+            </div>
+        </div>
+
+
+    </div>
+    <!--------------------------------------------------------------------->
+
+</body>
+<script src="main.js"></script>
+</html>
+
+
+
+
+<!----Developed by ©  Vishak kr-2021------>
